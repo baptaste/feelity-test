@@ -1,0 +1,9 @@
+@import '../../styles/main.scss';
+
+@media (max-width: 500px) {
+	.header {
+		width: $app-width;
+		height: $header-height;
+		padding: 0 1rem;
+	}
+}
