@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('../public/fonts/Roboto-Bold.ttf') format('truetype');
+	font-display: swap;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
