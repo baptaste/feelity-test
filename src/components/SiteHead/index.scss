@@ -1,0 +1,14 @@
+@import '../../styles/main.scss';
+
+@media (max-width: 500px) {
+	.siteHead {
+		width: $app-width;
+		position: relative;
+		text-align: center;
+		// height: $header-height;
+		// padding: 0 1rem;
+
+		.siteLogo {
+		}
+	}
+}
