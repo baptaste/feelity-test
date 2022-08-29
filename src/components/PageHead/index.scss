@@ -3,5 +3,9 @@
 @media (max-width: 500px) {
 	.pageHead {
 		width: 100%;
+
+		h1 {
+			letter-spacing: 2px;
+		}
 	}
 }
