@@ -2,6 +2,7 @@ $color-1: #ffffff;
 $color-2: #222222;
 $color-3: #4a4a4a;
 $color-4: #0000001a;
+$color-5: #f4f4f4;
 
 .color-1 {
 	color: $color-1;
@@ -25,4 +26,20 @@ $color-4: #0000001a;
 
 .bg-3 {
 	background: $color-3;
+}
+
+.color-4 {
+	color: $color-4;
+}
+
+.bg-4 {
+	background: $color-4;
+}
+
+.color-5 {
+	color: $color-5;
+}
+
+.bg-5 {
+	background: $color-5;
 }

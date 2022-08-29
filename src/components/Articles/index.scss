@@ -1,0 +1,29 @@
+@import '../../styles/main.scss';
+
+@media (max-width: 500px) {
+	.articles {
+		&__description {
+			min-height: 120px;
+		}
+
+		&__action-link {
+			width: 90%;
+			margin: 1rem auto;
+			padding: 1rem;
+			border-radius: 14.5px;
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.articles__description {
+		width: 50%;
+		min-height: 120px;
+	}
+
+	.articles__action-link {
+		width: 50%;
+		padding: 1rem;
+		border-radius: 14.5px;
+	}
+}

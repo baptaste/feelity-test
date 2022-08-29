@@ -5,9 +5,9 @@ export declare interface IMainButtonProps {
 	text?: string;
 	hasText?: boolean;
 	iconSrc?: string;
+	iconAlt?: string;
 	iconWidth?: string | number;
 	iconHeight?: string | number;
-	reverseIcon?: boolean;
 	width?: string | number;
 	height?: string | number;
 	classes?: string;

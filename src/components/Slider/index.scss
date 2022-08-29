@@ -1,13 +1,14 @@
 @import '../../styles/main.scss';
-// $slider-width: calc($app-width + 10vw);
 
 @media (max-width: 500px) {
-	.slider {
-		width: 109%;
-		// background: salmon;
-		position: relative;
-		top: -10%;
-		overflow-x: scroll;
-		padding-bottom: 3rem;
+	.slider-container {
+		width: $app-width;
+
+		.slider {
+			width: $app-width;
+			align-self: flex-start;
+			overflow-x: scroll;
+			padding-bottom: 3rem;
+		}
 	}
 }

@@ -2,8 +2,36 @@
 
 @media (max-width: 500px) {
 	.header {
-		width: $app-width;
+		width: 100%;
 		height: $header-height;
-		padding: 0 1rem 3.5rem 1rem;
+		padding: 2rem 0 0;
+
+		.siteHead {
+			width: 90%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			padding: 0 1rem;
+
+			&__logo-container {
+				grid-column: 2;
+			}
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.header {
+		padding: 1rem 0;
+
+		.siteHead {
+			width: 90%;
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			place-items: center;
+
+			&__logo-container {
+				grid-column: 3;
+			}
+		}
 	}
 }

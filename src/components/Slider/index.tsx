@@ -1,41 +1,45 @@
 import './index.scss';
-import services from '../../data/services.json';
 import Card from '../Card';
 import { useEffect } from 'react';
 import type { IService } from './Slider.d';
+import SectionHead from '../SectionHead';
 
-export default function Slider({ setSelectedService }: any): JSX.Element {
+export default function Slider({ services, setSelectedService }: any): JSX.Element {
 	let observer: undefined | IntersectionObserver;
+	const mobileBreakpoint: number = 500;
 
 	useEffect(() => {
-		observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					setSelectedService(entry.target.id);
-				});
-			},
-			{
-				root: document.querySelector('.slider'),
-				rootMargin: '100% 0% 100% 0%',
-				threshold: 0.7,
-			}
-		);
+		if (window.innerWidth < mobileBreakpoint) {
+			observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) setSelectedService(entry.target.id);
+					});
+				},
+				{
+					threshold: 0.7,
+				}
+			);
 
-		document.querySelectorAll('.card').forEach((elem) => {
-			observer?.observe(elem);
-		});
-
-		return () =>
 			document.querySelectorAll('.card').forEach((elem) => {
 				observer?.observe(elem);
 			});
+
+			return () =>
+				document.querySelectorAll('.card').forEach((elem) => {
+					observer?.unobserve(elem);
+				});
+		}
 	}, [observer]);
 
 	return (
-		<div className="slider flex">
-			{services.map((service: IService) => (
-				<Card key={service.id} id={service.id} image={service.image} />
-			))}
-		</div>
+		<section className="slider-container flex-column">
+			<SectionHead title="Services" classes="color-1" />
+			<div className="slider flex">
+				{services.map((service: IService) => (
+					<Card key={service.id} setSelectedService={setSelectedService} {...service} />
+				))}
+			</div>
+		</section>
 	);
 }

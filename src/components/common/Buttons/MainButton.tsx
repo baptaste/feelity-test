@@ -16,12 +16,7 @@ export default function MainButton(props: IMainButtonProps): JSX.Element {
 		>
 			{props.hasText ? props.text : ''}
 			{props.children ? props.children : null}
-			{props.iconSrc ? (
-				<img
-					src={props.iconSrc}
-					style={{ width: props.iconWidth, height: props.iconHeight, transform: props.reverseIcon ? 'rotate(180deg)' : '' }}
-				/>
-			) : null}
+			{props.iconSrc ? <img src={props.iconSrc} alt={props.iconAlt} style={{ width: props.iconWidth, height: props.iconHeight }} /> : null}
 		</button>
 	);
 }

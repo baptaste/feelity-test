@@ -1,0 +1,16 @@
+@import '../../styles/main.scss';
+
+@media (max-width: 500px) {
+	.layout {
+		width: 100%;
+		position: relative;
+		top: -15%;
+		overflow-x: hidden;
+	}
+}
+
+@media (min-width: 500px) {
+	.layout {
+		padding: 3rem 0;
+	}
+}

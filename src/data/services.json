@@ -2,11 +2,13 @@
 	{
 		"id": "service1",
 		"image": "service1.png",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet malesuada ex, consectetur convallis erat. Sed viverra id metus in eleifend. Curabitur sit amet blandit augue, in varius sem. Donec iaculis diam non egestas ornare. Aliquam fermentum velit ut finibus efficitur. Nunc dignissim eget lectus at egestas. Quisque at sodales massa. Nunc iaculis ligula ut nulla aliquet ultrices. Pellentesque at auctor leo. Duis placerat enim quis sapien mattis convallis. Sed placerat non ante in malesuada. Etiam et vestibulum mauris. Nulla sem lectus, feugiat nec lacus id, imperdiet eleifend sapien."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet malesuada ex, consectetur convallis erat. Sed viverra id metus in eleifend.",
+		"alt": "Image Service 1"
 	},
 	{
 		"id": "service2",
 		"image": "service2.png",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet malesuada ex, consectetur convallis erat. Sed viverra id metus in eleifend. Curabitur sit amet blandit augue, in varius sem. Donec iaculis diam non egestas ornare. Aliquam fermentum velit ut finibus efficitur. Nunc dignissim eget lectus at egestas. Quisque at sodales massa. Nunc iaculis ligula ut nulla aliquet ultrices. Pellentesque at auctor leo. Duis placerat enim quis sapien mattis convallis. Sed placerat non ante in malesuada. Etiam et vestibulum mauris. Nulla sem lectus, feugiat nec lacus id, imperdiet eleifend sapien."
+		"description": "Curabitur sit amet blandit augue, in varius sem. Donec iaculis diam non egestas ornare. Aliquam fermentum velit ut finibus efficitur.",
+		"alt": "Image Service 2"
 	}
 ]

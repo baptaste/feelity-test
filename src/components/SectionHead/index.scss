@@ -1,0 +1,27 @@
+@import '../../styles/main.scss';
+
+@media (max-width: 500px) {
+	.sectionHead {
+		width: 100%;
+
+		h1 {
+			padding-bottom: 1rem;
+		}
+	}
+
+	.slider-container {
+		.sectionHead {
+			padding-left: 2rem;
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.sectionHead {
+		padding-bottom: 3rem;
+
+		h1 {
+			color: $color-2;
+		}
+	}
+}

@@ -1,11 +1,23 @@
 @import '../../styles/main.scss';
 
-@media (max-width: 500px) {
-	.goTo {
-		width: 50px;
-		height: 50px;
-		position: absolute;
-		left: 0;
-		border-radius: 1rem;
+.goTo {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 1rem;
+	box-shadow: 5px 5px 15px -12px $color-3;
+	-webkit-box-shadow: 2px 2px 25px -12px $color-3;
+	-moz-box-shadow: 2px 2px 25px -12px $color-3;
+	transition: opacity 250ms ease-in-out, transform 150ms ease-in;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&.right-arrow {
+		&:hover {
+			opacity: 1;
+			transform: scale(0.9);
+		}
 	}
 }
