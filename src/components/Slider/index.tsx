@@ -5,12 +5,11 @@ import type { IService } from './Slider.d';
 import SectionHead from '../SectionHead';
 
 export default function Slider({ services, setSelectedService }: any): JSX.Element {
-	let observer: undefined | IntersectionObserver;
 	const mobileBreakpoint: number = 500;
 
 	useEffect(() => {
 		if (window.innerWidth < mobileBreakpoint) {
-			observer = new IntersectionObserver(
+			const observer = new IntersectionObserver(
 				(entries) => {
 					entries.forEach((entry) => {
 						if (entry.isIntersecting) setSelectedService(entry.target.id);
@@ -30,7 +29,7 @@ export default function Slider({ services, setSelectedService }: any): JSX.Eleme
 					observer?.unobserve(elem);
 				});
 		}
-	}, [observer]);
+	}, []);
 
 	return (
 		<section className="slider-container flex-column">
